@@ -1,0 +1,11 @@
+--- a/src/Makefile
++++ b/src/Makefile
+@@ -2,7 +2,7 @@ all: dropwatch
+ 
+ CPPFLAGS += -D_GNU_SOURCE
+ CFLAGS += -g -Wall -Werror $(shell pkg-config --cflags libnl-3.0)
+-LDLIBS += -lreadline -lnl-3 -lnl-genl-3
++LDLIBS += -lreadline -lncurses -lnl-3 -lnl-genl-3
+ 
+ OBJFILES := main.o lookup.o\
+ 	 lookup_kas.o
