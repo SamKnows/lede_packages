@@ -350,6 +350,9 @@ config FFMPEG_CUSTOM_DEMUXER_ape
 config FFMPEG_CUSTOM_DEMUXER_flac
 	bool "FLAC"
 
+config FFMPEG_CUSTOM_DEMUXER_flv
+	bool "FLV"
+
 config FFMPEG_CUSTOM_DEMUXER_ffm
 	bool "FFM (ffserver live feed)"
 
@@ -360,6 +363,9 @@ config FFMPEG_CUSTOM_DEMUXER_h264
 config FFMPEG_CUSTOM_DEMUXER_hevc
 	bool "HEVC / H265 Raw Video"
 	depends on FFMPEG_CUSTOM_PATENTED
+
+config FFMPEG_CUSTOM_DEMUXER_hls
+	bool "HLS"
 
 config FFMPEG_CUSTOM_DEMUXER_matroska
 	bool "Matroska (MKA,MKV)"

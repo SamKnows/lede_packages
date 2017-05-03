@@ -84,9 +84,11 @@ FFMPEG_CUSTOM_DEMUXERS:= \
 	ape \
 	avi \
 	flac \
+	flv \
 	ffm \
 	h264 \
 	hevc \
+	hls \
 	matroska \
 	mov \
 	mp3 \
