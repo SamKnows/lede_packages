@@ -1,0 +1,22 @@
+--- a/configure
++++ b/configure
+@@ -4321,8 +4321,6 @@ fi
+ $as_echo "$ac_cv_lib_termcap_tgetent" >&6; }
+ if test "x$ac_cv_lib_termcap_tgetent" = xyes; then :
+   TERMCAP_LIB=-ltermcap
+-else
+-   as_fn_error $? "Cannot find tinfo, ncurses or termcap libraries" "$LINENO" 5
+ 
+ fi
+ 
+--- a/src/Makefile.in
++++ b/src/Makefile.in
+@@ -78,7 +78,7 @@ PRE_UNINSTALL = :
+ POST_UNINSTALL = :
+ build_triplet = @build@
+ host_triplet = @host@
+-bin_PROGRAMS = killall$(EXEEXT) pstree$(EXEEXT) prtstat$(EXEEXT) \
++bin_PROGRAMS = killall$(EXEEXT) prtstat$(EXEEXT) \
+ 	$(am__EXEEXT_1) $(am__EXEEXT_2) $(am__EXEEXT_3) \
+ 	$(am__EXEEXT_4) $(am__EXEEXT_5) $(am__EXEEXT_6) \
+ 	$(am__EXEEXT_7)
