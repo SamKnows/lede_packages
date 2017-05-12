@@ -1,0 +1,11 @@
+--- a/configure
++++ b/configure
+@@ -7032,7 +7032,7 @@
+     want_fuser=no
+     ;;
+   *)
+-    want_fuser=yes
++    want_fuser=no
+ 	;;
+ esac
+  if test $want_fuser = yes; then
